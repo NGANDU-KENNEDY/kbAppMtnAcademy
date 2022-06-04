@@ -1,0 +1,144 @@
+Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Center(
+              child: Container(
+                height: 300,
+                width: 300,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(25),
+                    color: Colors.black),
+              ),
+            ),
+            Center(
+              child: Container(
+                color: Colors.grey.shade700,
+                width: 300,
+                height: 300,
+                child: Container(
+                  color: Colors.amber,
+                ),
+              ),
+            )
+          ],
+        ),
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text('Next'),
+              // ignore: avoid_unnecessary_containers
+              Container(
+                  height: 30,
+                  width: 100,
+
+                  //color: Colors.blue,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(25),
+                      color: Colors.blue),
+                  child: const Padding(
+                    padding: EdgeInsets.all(15.0),
+                  )),
+              // ignore: avoid_unnecessary_containers
+              Container(
+                child: Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Container(
+                      height: 30,
+                      width: 100,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(25),
+                          color: Colors.blue.shade900),
+                    )),
+              )
+            ],
+          )
+
+           height: 500,
+                width: 400,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(25),
+                    color: Colors.white),
+                child: Image.asset('lib/images/inone.png'),
+
+
+
+
+                 /* Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: Container(
+                        height: 40,
+                        width: 80,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(25),
+                            color: Colors.white),
+                        child: IconButton(
+                            iconSize: 20,
+                            alignment: Alignment.center,
+                            icon: Icon(Icons.app_registration,
+                                color: Colors.red.shade900),
+                            onPressed: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (BuildContext context) =>
+                                        const Register())))))*/  Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: Container(
+                        height: 40,
+                        width: 150,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(25),
+                            color: Colors.black),
+                        child: OutlinedButton.icon(
+                            icon: const Text(
+                              'GALLERY',
+                            ),
+                            label: const Icon(Icons.photo),
+                            onPressed: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Container(
+              width: 650,
+              height: 100,
+              color: Colors.blue,
+              child: const Padding(
+                padding: EdgeInsets.all(15.0),
+                child: Text(
+                  'We trust ourself enough to always deliver '
+                  'a service beyond your expetations.',
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
+          ),                                builder: (BuildContext context) =>
+                                        const ()))))

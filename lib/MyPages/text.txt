@@ -1,0 +1,209 @@
+import 'package:flutter/material.dart';
+
+class Categories extends StatelessWidget {
+  const Categories({Key? key}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+      backgroundColor: Colors.black,
+      title: const Text(
+        'P A R T N E R S',
+        style: TextStyle(
+            fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),
+      ),
+      centerTitle: true,
+    ));
+  }
+}
+
+
+
+
+ Builder(builder: (context) {
+        return Container(
+          color: Colors.cyan,
+          child: ListView(children: [
+            Padding(
+              padding: const EdgeInsets.all(80.0),
+              child: Container(),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: Container(
+                        height: 40,
+                        width: 150,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(25),
+                            color: Colors.black),
+                        child: OutlinedButton.icon(
+                            icon: const Text(
+                              'PARTNERS',
+                            ),
+                            label: const Icon(Icons.people),
+                            onPressed: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (BuildContext context) =>
+                                        const Home()))))),
+                Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: Container(
+                        height: 40,
+                        width: 150,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(25),
+                            color: Colors.black),
+                        child: OutlinedButton.icon(
+                            icon: const Text(
+                              'GALLERY',
+                            ),
+                            label: const Icon(Icons.photo),
+                            onPressed: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (BuildContext context) =>
+                                        const Login()))))),
+              ],
+            )
+          ]),
+        );
+      }),
+
+
+
+      Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Container(
+              width: 650,
+              height: 100,
+              color: Colors.blue,
+              child: const Padding(
+                padding: EdgeInsets.all(20.0),
+                child: Text(
+                  'We trust ourself enough to always deliver '
+                  'a service beyond your expetations.',
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
+          ),
+
+
+
+
+          
+class Logos extends StatelessWidget {
+  const Logos({Key? key}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.black,
+          title: const Text(
+            'L O G O S',
+            style: TextStyle(
+                fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),
+          ),
+          centerTitle: true,
+        ),
+        body: Center(
+            child: ConstrainedBox(
+                constraints: const BoxConstraints(
+                  minWidth: 500,
+                ),
+                child: Builder(builder: (context) {
+                  return ListView(children: [
+                    Padding(
+                      padding: const EdgeInsets.all(20.0),
+                      child: Container(
+                        height: 200,
+                        width: 200,
+                        color: Colors.blue,
+                        child: Image.asset('lib/images/th.jpg'),
+                      ),
+                    ),
+                    Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Container(
+                          height: 200,
+                          width: 200,
+                          color: Colors.red,
+                          child: Image.asset('lib/images/geometry.jpg'),
+                        )),
+                    Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Container(
+                          height: 200,
+                          width: 200,
+                          color: Colors.green,
+                        )),
+                    Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Container(
+                          height: 200,
+                          width: 200,
+                          color: Colors.yellow,
+                        ))
+                  ]);
+                }))));
+  }
+}
+
+class Posters extends StatelessWidget {
+  const Posters({Key? key}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.black,
+          title: const Text(
+            'P O S T E R',
+            style: TextStyle(
+                fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),
+          ),
+          centerTitle: true,
+        ),
+        body: Center(child: Builder(builder: (context) {
+          return ListView(children: [
+            Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Container(
+                height: 200,
+                width: 200,
+                color: Colors.blue,
+                child: Image.asset('lib/images/th.jpg'),
+              ),
+            ),
+            Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Container(
+                  height: 200,
+                  width: 200,
+                  color: Colors.red,
+                  child: Image.asset('lib/images/geometry.jpg'),
+                )),
+            Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Container(
+                  height: 200,
+                  width: 200,
+                  color: Colors.green,
+                )),
+            Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Container(
+                  height: 200,
+                  width: 200,
+                  color: Colors.yellow,
+                ))
+          ]);
+        })));
+  }
+}
